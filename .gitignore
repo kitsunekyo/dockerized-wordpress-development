@@ -1,0 +1,6 @@
+wp-app/
+wp-data/
+config/
+**/*.zip
+**/node_modules/
+**/dist/
