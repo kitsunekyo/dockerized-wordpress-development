@@ -128,11 +128,6 @@ function starter_theme_scripts() {
   // load assets (dev)
   wp_enqueue_script('starter-theme-scripts-dev', 'http://localhost:8080/site.js');
   // wp_enqueue_script('starter-theme-admin-scripts-dev', 'http://localhost:8080/admin.js');
-
-  // original _s
-  // wp_enqueue_style( ' starter-theme-style', get_stylesheet_uri() );
-  // wp_enqueue_script( ' starter-theme-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
-  // wp_enqueue_script( ' starter-theme-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
 }
 add_action( 'wp_enqueue_scripts', 'starter_theme_scripts' );
 
