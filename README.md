@@ -60,3 +60,8 @@ wp_enqueue_script('starter-theme-admin-scripts', get_template_directory_uri() . 
 I dont want this package to be too opinionated when it comes to styling basics or functionality. It should merely be a starting ground, and feature things we pretty much always need when building new themes.
 
 - automate static reference changes with npm scripts (no manual reference change in function.php)
+
+## Credit
+
+* theme base: [https://github.com/Automattic/_s](https://github.com/Automattic/_s)
+* docker-compose: [https://github.com/nezhar/wordpress-docker-compose]
