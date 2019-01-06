@@ -22,10 +22,18 @@ module.exports = merge(
     module: {
       rules: [
         {
-          test: /\.js$/,
+          test: /\.js$/, // scripts
           exclude: /node_modules/,
           use: ['babel-loader']
-        }
+        },
+        {
+          test: /\.(png|svg|jpg|jpeg|gif)$/, // images
+          use: ['file-loader']
+        },
+        {
+          test: /\.(woff|woff2|eot|ttf|otf)$/, // fonts
+          use: ['file-loader']
+        },
       ]
     },
     plugins: []
