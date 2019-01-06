@@ -4,7 +4,7 @@
  *
  * @link https://codex.wordpress.org/Creating_an_Error_404_Page
  *
- * @package starter-theme
+ * @package starter_theme
  */
 
 get_header();
@@ -15,11 +15,11 @@ get_header();
 
       <section class="error-404 not-found">
         <header class="page-header">
-          <h1 class="page-title"><?php esc_html_e( 'Oops! That page can&rsquo;t be found.', 'starter-theme' ); ?></h1>
+          <h1 class="page-title"><?php esc_html_e( 'Oops! That page can&rsquo;t be found.', 'starter_theme' ); ?></h1>
         </header><!-- .page-header -->
 
         <div class="page-content">
-          <p><?php esc_html_e( 'It looks like nothing was found at this location. Maybe try one of the links below or a search?', 'starter-theme' ); ?></p>
+          <p><?php esc_html_e( 'It looks like nothing was found at this location. Maybe try one of the links below or a search?', 'starter_theme' ); ?></p>
 
           <?php
           get_search_form();
@@ -28,7 +28,7 @@ get_header();
           ?>
 
           <div class="widget widget_categories">
-            <h2 class="widget-title"><?php esc_html_e( 'Most Used Categories', 'starter-theme' ); ?></h2>
+            <h2 class="widget-title"><?php esc_html_e( 'Most Used Categories', 'starter_theme' ); ?></h2>
             <ul>
               <?php
               wp_list_categories( array(
@@ -44,7 +44,7 @@ get_header();
 
           <?php
           /* translators: %1$s: smiley */
-          $starter_theme_archive_content = '<p>' . sprintf( esc_html__( 'Try looking in the monthly archives. %1$s', 'starter-theme' ), convert_smilies( ':)' ) ) . '</p>';
+          $starter_theme_archive_content = '<p>' . sprintf( esc_html__( 'Try looking in the monthly archives. %1$s', 'starter_theme' ), convert_smilies( ':)' ) ) . '</p>';
           the_widget( 'WP_Widget_Archives', 'dropdown=1', "after_title=</h2>$starter_theme_archive_content" );
 
           the_widget( 'WP_Widget_Tag_Cloud' );

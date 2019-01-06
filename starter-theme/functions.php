@@ -1,10 +1,10 @@
 <?php
 /**
- * starter-theme functions and definitions
+ * starter_theme functions and definitions
  *
  * @link https://developer.wordpress.org/themes/basics/theme-functions/
  *
- * @package starter-theme
+ * @package starter_theme
  */
 
 if ( ! function_exists( 'starter_theme_setup' ) ) :
@@ -19,10 +19,10 @@ if ( ! function_exists( 'starter_theme_setup' ) ) :
     /*
      * Make theme available for translation.
      * Translations can be filed in the /languages/ directory.
-     * If you're building a theme based on starter-theme, use a find and replace
-     * to change 'starter-theme' to the name of your theme in all the template files.
+     * If you're building a theme based on starter_theme, use a find and replace
+     * to change 'starter_theme' to the name of your theme in all the template files.
      */
-    load_theme_textdomain( 'starter-theme', get_template_directory() . '/languages' );
+    load_theme_textdomain( 'starter_theme', get_template_directory() . '/languages' );
 
     // Add default posts and comments RSS feed links to head.
     add_theme_support( 'automatic-feed-links' );
@@ -44,7 +44,7 @@ if ( ! function_exists( 'starter_theme_setup' ) ) :
 
     // This theme uses wp_nav_menu() in one location.
     register_nav_menus( array(
-      'menu-1' => esc_html__( 'Primary', 'starter-theme' ),
+      'menu-1' => esc_html__( 'Primary', 'starter_theme' ),
     ) );
 
     /*
@@ -105,9 +105,9 @@ add_action( 'after_setup_theme', 'starter_theme_content_width', 0 );
  */
 function starter_theme_widgets_init() {
   register_sidebar( array(
-    'name'          => esc_html__( 'Sidebar', 'starter-theme' ),
+    'name'          => esc_html__( 'Sidebar', 'starter_theme' ),
     'id'            => 'sidebar-1',
-    'description'   => esc_html__( 'Add widgets here.', 'starter-theme' ),
+    'description'   => esc_html__( 'Add widgets here.', 'starter_theme' ),
     'before_widget' => '<section id="%1$s" class="widget %2$s">',
     'after_widget'  => '</section>',
     'before_title'  => '<h2 class="widget-title">',
@@ -121,13 +121,13 @@ add_action( 'widgets_init', 'starter_theme_widgets_init' );
  */
 function starter_theme_scripts() {
   // load assets (prod)
-  // wp_enqueue_style('starter-theme-style', get_template_directory_uri() . '/dist/site.css');
-  // wp_enqueue_script('starter-theme-scripts', get_template_directory_uri() . '/dist/site.js');
-  // wp_enqueue_script('starter-theme-admin-scripts', get_template_directory_uri() . '/dist/admin.js');
+  // wp_enqueue_style('starter_theme-style', get_template_directory_uri() . '/dist/site.css');
+  // wp_enqueue_script('starter_theme-scripts', get_template_directory_uri() . '/dist/site.js');
+  // wp_enqueue_script('starter_theme-admin-scripts', get_template_directory_uri() . '/dist/admin.js');
 
   // load assets (dev)
-  wp_enqueue_script('starter-theme-scripts-dev', 'http://localhost:8080/site.js');
-  // wp_enqueue_script('starter-theme-admin-scripts-dev', 'http://localhost:8080/admin.js');
+  wp_enqueue_script('starter_theme-scripts-dev', 'http://localhost:8080/site.js');
+  // wp_enqueue_script('starter_theme-admin-scripts-dev', 'http://localhost:8080/admin.js');
 }
 add_action( 'wp_enqueue_scripts', 'starter_theme_scripts' );
 

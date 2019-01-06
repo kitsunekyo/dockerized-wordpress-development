@@ -6,7 +6,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
- * @package starter-theme
+ * @package starter_theme
  */
 
 ?>
@@ -22,7 +22,7 @@
 
 <body <?php body_class(); ?>>
 <div id="page" class="site">
-  <a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'starter-theme' ); ?></a>
+  <a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'starter_theme' ); ?></a>
 
   <header id="masthead" class="site-header">
     <div class="site-branding">
@@ -45,7 +45,7 @@
     </div><!-- .site-branding -->
 
     <nav id="site-navigation" class="main-navigation">
-      <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'starter-theme' ); ?></button>
+      <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'starter_theme' ); ?></button>
       <?php
       wp_nav_menu( array(
         'theme_location' => 'menu-1',

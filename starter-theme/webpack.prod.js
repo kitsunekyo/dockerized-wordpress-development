@@ -2,7 +2,7 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
   output: {
-    publicPath: '/wp-content/themes/starter-theme/dist/'
+    publicPath: '/wp-content/themes/starter_theme/dist/'
   },
   module: {
     rules: [
